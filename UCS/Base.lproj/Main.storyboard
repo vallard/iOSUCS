@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UCS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YZD-cU-1gT">
+                                <rect key="frame" x="20" y="327" width="560" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHB-4U-TcD">
+                                <rect key="frame" x="20" y="383" width="560" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSignPressSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWM-dD-OQn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCS Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zh0-6K-7aG">
+                                <rect key="frame" x="20" y="92" width="560" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your UCS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lvu-vg-Qg4">
+                                <rect key="frame" x="20" y="193" width="560" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpW-QJ-WCR">
+                                <rect key="frame" x="20" y="241" width="54" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCS System" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXK-7t-i9G">
+                                <rect key="frame" x="20" y="174" width="60" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RI-d4-ych">
+                                <rect key="frame" x="20" y="308" width="47" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EwS-3h-DLD">
+                                <rect key="frame" x="20" y="260" width="560" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="zh0-6K-7aG" secondAttribute="leading" id="0F0-Co-RWs"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lvu-vg-Qg4" secondAttribute="leading" id="0Lh-7j-w1l"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4RI-d4-ych" secondAttribute="leading" id="1O7-ST-aeT"/>
+                            <constraint firstItem="lvu-vg-Qg4" firstAttribute="top" secondItem="dXK-7t-i9G" secondAttribute="bottom" constant="7" id="8pY-a1-AI1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zh0-6K-7aG" secondAttribute="trailing" id="Adj-PS-Tq6"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dXK-7t-i9G" secondAttribute="leading" id="C7v-Yo-tBz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cpW-QJ-WCR" secondAttribute="leading" id="DKZ-tJ-8J2"/>
+                            <constraint firstItem="zh0-6K-7aG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="JKN-fe-ndt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YZD-cU-1gT" secondAttribute="trailing" id="QJz-RC-oCI"/>
+                            <constraint firstItem="dXK-7t-i9G" firstAttribute="top" secondItem="zh0-6K-7aG" secondAttribute="bottom" constant="36" id="a0Z-Aq-QKj"/>
+                            <constraint firstItem="EwS-3h-DLD" firstAttribute="top" secondItem="cpW-QJ-WCR" secondAttribute="bottom" constant="7" id="azg-jD-nMX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="EwS-3h-DLD" secondAttribute="leading" id="ix0-FU-ti0"/>
+                            <constraint firstItem="cpW-QJ-WCR" firstAttribute="top" secondItem="lvu-vg-Qg4" secondAttribute="bottom" constant="2" id="jk1-qc-b6G"/>
+                            <constraint firstItem="4RI-d4-ych" firstAttribute="top" secondItem="EwS-3h-DLD" secondAttribute="bottom" constant="2" id="kaW-pj-llD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lvu-vg-Qg4" secondAttribute="trailing" id="lmB-Pt-PhI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YZD-cU-1gT" secondAttribute="leading" id="my7-mH-KCR"/>
+                            <constraint firstItem="YHB-4U-TcD" firstAttribute="top" secondItem="YZD-cU-1gT" secondAttribute="bottom" constant="10" id="o0a-Se-s6b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EwS-3h-DLD" secondAttribute="trailing" id="odO-eZ-OgY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YHB-4U-TcD" secondAttribute="trailing" id="stH-kf-6qp"/>
+                            <constraint firstItem="YZD-cU-1gT" firstAttribute="top" secondItem="4RI-d4-ych" secondAttribute="bottom" constant="7" id="uae-RZ-5sg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YHB-4U-TcD" secondAttribute="leading" id="uwx-7D-hgq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="YZD-cU-1gT" id="8SY-LC-OxG"/>
+                        <outlet property="ucsSystemTextField" destination="lvu-vg-Qg4" id="rt8-jN-kc9"/>
+                        <outlet property="userNameTextField" destination="EwS-3h-DLD" id="Ujn-fo-0kY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
