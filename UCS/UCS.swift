@@ -18,8 +18,17 @@ class UCS  {
         
         print("attempting to connect to UCS \(ucs)")
         
+        let headers = [
+            "Content-Type": "text/xml"
+        ]
         
         
+        Alamofire.request(.GET, "https://10.93.234.238/nuova", parameters: nil, encoding: .URL, headers: headers)
+            .response { (request, response, data, error) in
+                print(data)
+                //let xml = SWXMLHash.parse(data!)
+                
+        }
         return true
         
     }
