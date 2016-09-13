@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var ucsSystemTextField: UITextField!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    let ucs = UCS()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func didSignPressSignIn(sender: AnyObject) {
+    @IBAction func didSignPressSignIn(_ sender: AnyObject) {
         if valuesReady() {
             attemptLogin("10.93.234.238", user: "admin", password: "oicu812!")
         }
@@ -35,8 +36,8 @@ class ViewController: UIViewController {
         return true
     }
     
-    func attemptLogin(ucsUrl: String, user: String, password: String) {
-        let ucs = UCS()
+    func attemptLogin(_ ucsUrl: String, user: String, password: String) {
+        
         ucs.connect(ucsUrl, user: user, password: password)
     }
     
