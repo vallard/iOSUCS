@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     let ucs = UCS()
     
+    var ucsIP = ""
+    var user = ""
+    var password = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,17 +32,27 @@ class ViewController: UIViewController {
     
     @IBAction func didSignPressSignIn(_ sender: AnyObject) {
         if valuesReady() {
-            attemptLogin("10.93.234.238", user: "admin", password: "oicu812!")
+            attemptLogin(ucsIP, user: user, password: password)
         }
     }
     
     func valuesReady() -> Bool {
+        ucsIP = ucsSystemTextField.text!
+        user = userNameTextField.text!
+        password = passwordTextField.text!
+        
+        if (ucsIP == "") ||
+            (user == "") ||
+            (password == "")  {
+            return false
+        }
         return true
     }
     
     func attemptLogin(_ ucsUrl: String, user: String, password: String) {
         
-        ucs.connect(ucsUrl, user: user, password: password)
+       let b = ucs.connect(ucsUrl, user: user, password: password)
+        print(b)
     }
     
 }

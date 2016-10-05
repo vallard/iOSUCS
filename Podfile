@@ -4,6 +4,9 @@ use_frameworks!
 
 
 target "UCS" do 
-  pod 'Alamofire', '~> 4.0'
-  #pod 'SWXMLHash', '~> 2.5.1'
+  pod 'Alamofire', 
+    :git => 'https://github.com/Alamofire/Alamofire.git'
 end
+
+  #pod 'Alamofire', '~> 4.0.0'
+  #pod 'SWXMLHash', '~> 2.5.1'
